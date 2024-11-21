@@ -104,6 +104,8 @@ public class Monopoly {
 
                 // Next player's turn
                 currentPlayerIndex = (currentPlayerIndex + 1) % players.size();
+
+                System.out.println("test");
             }
         }
     }
