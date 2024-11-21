@@ -11,6 +11,7 @@ public class Property extends Space {
     private Player owner;
     private int houses; // Number of houses (0-4), 5 represents a hotel
     private boolean mortgaged;
+    private boolean isUtilityOrRailroad;
 
     public Property(String name, int price, int[] rent, int houseCost, PropertyGroup group) {
         super(name);
@@ -21,6 +22,16 @@ public class Property extends Space {
         this.owner = null;
         this.houses = 0;
         this.mortgaged = false;
+        this.isUtilityOrRailroad = false;
+    }
+
+    public Property(String name, int price, PropertyGroup group) {
+        super(name);
+        this.price = price;
+        this.group = group;
+        this.owner = null;
+        this.mortgaged = false;
+        this.isUtilityOrRailroad = true;
     }
 
     @Override
