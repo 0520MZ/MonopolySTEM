@@ -35,6 +35,7 @@ public class Monopoly {
         String name;
         int cost;
         int rent;
+        int testVar;
 
         public Property(String name, int cost, int rent) {
             this.name = name;
